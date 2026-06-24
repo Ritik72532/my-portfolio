@@ -1,3 +1,5 @@
+import Link from "next/link"; 
+
 interface Project {
   title: string;
   description: string;
@@ -37,19 +39,26 @@ export default function ProjectGrid() {
         <h2 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">Selected Engineering Work</h2>
       </div>
 
-      {/* Grid: 1 col on mobile, 2 cols on tablet, 3 cols on desktop */}
+      {/* Grid wrapper */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projectsList.map((project, index) => (
-          <div 
+         
+          <Link
             key={index}
-            className="group flex flex-col justify-between border border-zinc-900 bg-zinc-950/40 p-6 transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-900/30"
+            href={project.link}
+            target="_blank" 
+            rel="noopener noreferrer" // Security protocol for external routing
+            className="group flex flex-col justify-between border border-zinc-900 bg-zinc-950/40 p-6 transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-900/30 cursor-pointer"
           >
             <div>
               <div className="flex items-center justify-between">
                 <h3 className="font-mono text-base font-medium text-zinc-200 group-hover:text-white transition-colors">
                   {project.title}
                 </h3>
-                <span className="text-zinc-600 group-hover:text-zinc-400 transition-colors font-mono text-xs">↗</span>
+                
+                <span className="text-zinc-600 group-hover:text-white transition-colors font-mono text-xs transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200">
+                  ↗
+                </span>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-zinc-400">
                 {project.description}
@@ -66,7 +75,7 @@ export default function ProjectGrid() {
                 </span>
               ))}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
