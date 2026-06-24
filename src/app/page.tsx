@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import ProjectGrid from "./components/ProjectGrid";
+import SkillsGrid from "./components/SkillsGrid";
 import TechWidget from "./components/TechWidget";
 
 export default function Home() {
@@ -26,10 +27,29 @@ export default function Home() {
             <TechWidget />
           </div>
         </section>
-
+         {/* Skill  */}
+        <SkillsGrid />
         {/* Feature Grid Component */}
         <ProjectGrid />
-
+         {/* Academic things */}
+         <section id="education" className="py-20 border-t border-zinc-900">
+          <div className="mb-12">
+            <span className="font-mono text-xs tracking-widest uppercase text-zinc-500">// ACADEMIC HISTORY</span>
+            <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">Education</h2>
+          </div>
+          <div className="border border-zinc-900 bg-zinc-950/40 p-6 max-w-3xl">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <div>
+                <h3 className="text-lg font-bold text-zinc-200">G.L. Bajaj Institute of Technology and Management</h3>
+                <p className="text-sm text-zinc-400 font-mono mt-1">Bachelor of Technology in Computer Science and Engineering</p>
+              </div>
+              <div className="text-left sm:text-right font-mono text-xs text-zinc-500">
+                <p>2022 — 2026</p>
+                <p className="text-zinc-400 mt-1">CGPA: 6.96 / 10.0</p>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Minimalist Contact Prompt */}
         <section id="contact" className="py-20 border-t border-zinc-900 text-center md:text-left">
           <span className="font-mono text-xs tracking-widest uppercase text-zinc-500">// COMMUNICATIONS</span>
