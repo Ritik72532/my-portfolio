@@ -9,7 +9,7 @@ export  const metadata: Metadata = {
   openGraph: {
     title: "Ritik Aryan | Full-Stack Software Engineer",
     description: "Explore engineering case studies, specialized project repositories, and technical consulting architectures.",
-    url: "https://yourportfolio.com", // Swap with your real domain later
+    url: "https://my-portfolio-mu-six-yjodpkffbf.vercel.app/", 
     siteName: "Ritik Aryan Portfolio",
     images: [
       {
