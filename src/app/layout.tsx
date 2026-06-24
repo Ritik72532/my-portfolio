@@ -9,8 +9,10 @@ export  const metadata: Metadata = {
   openGraph: {
     title: "Ritik Aryan | Full-Stack Software Engineer",
     description: "Explore engineering case studies, specialized project repositories, and technical consulting architectures.",
+   
     url: "https://my-portfolio-mu-six-yjodpkffbf.vercel.app/", 
     siteName: "Ritik Aryan Portfolio",
+    
     images: [
       {
         url: "/og-image.png", // Image shown when shared on social media
@@ -39,6 +41,11 @@ export  const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "-uZMZNqvwMPpeoNH1fVljZ8voeUujV6IHA7vFrMldRs",
+  },
+   
+  
 };
 
 
