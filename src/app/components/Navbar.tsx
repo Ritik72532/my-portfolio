@@ -19,6 +19,7 @@ export default function Navbar() {
                     <nav className="hidden md:flex items-center space-x-8 text-xs font-mono tracking-wider uppercase text-zinc-400">
                         <a href="#about" className="hover:text-white transition-colors">// about</a>
                         <a href="#projects" className="hover:text-white transition-colors">// projects</a>
+                        <a href="#skills" className="hover:text-white transition-colors">// skills</a>
                         <a href="#contact" className="hover:text-white transition-colors">// contact</a>
                     </nav>
 
@@ -52,6 +53,7 @@ export default function Navbar() {
                     <nav className="flex flex-col space-y-4 text-sm font-mono tracking-wide text-zinc-400">
                         <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-white py-2">// about</a>
                         <a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-white py-2">// projects</a>
+                        <a href="#skills" onClick={() => setIsOpen(false)} className="hover:text-white py-2">// skills</a>
                         <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-white py-2">// contact</a>
                         <a
                             href="/resume.pdf"
